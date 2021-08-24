@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pr-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Livros Cadastrados</title>
+    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <img src="../img/favicon-32x32.png" alt="">
+        <h1>Livros Cadastrados</h1>
+        <h4>Página com formulário de cadastro e uma tabela com a lista de objetos cadastrados.</h4>
+    </header>
+    <nav>
+        <ul>
+            <li>
+                <a href="../index.html">Início</a>
+                <ul>
+                    <li><a href="#livros_destaque">Livros em Destaque</a></li>
+                    <li><a href="#livros_fantasia">Livros de Fantasia</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="administracaologin.html">Administração</a>
+                <ul>
+                    <li>
+                        <a href="usuarioscadastrados.html">Usuario</a>
+                    </li>
+                    <li>
+                        <a href="livroscadastrados.html">Livros</a>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="autor.html">Sobre o autor</a>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <form action="" method="post">
+            <h1>Formulário de Cadastro de Livros</h1>
+            <div>
+                <label for="nome_livro">Nome do Livro:</label>
+                <input type="text" name="nome_livro" id="nome_livro" minlength="2">
+            </div>
+            <div>
+                <label for="autor_livro">Autor do Livro:</label>
+                <input type="text" name="autor_livro" id="autor_livro">
+            </div>
+            <div>
+                <label for="capa_livro">Capa do Livro:</label>
+                <input type="file" name="capa_livro" id="capa_livro" accept="image/png, image/jpeg">
+            </div>
+            <div>
+                <label for="preco_livro">Preço mínimo do livro R$:</label>
+                <input type="number" name="preco_livro" id="preco_livro" min="1.00" placeholder="50.90">
+            </div>
+            <div>
+                <label for="editora_livro">Editora:</label>
+                <input type="text" name="eitora_livro" id="editora_livro">
+            </div>
+            <div>
+                <label for="numeropaginas_livro">Número de páginas:</label>
+                <input type="number" name="numeropaginas_livro" id="numeropaginas_livro" min="1">
+            </div>
+            <div>
+                <label for="idioma_livro">Idioma:</label>
+                <input type="text" name="idioma_livro" id="idioma_livro">
+            </div>
+            <div>
+                <input type="submit" value="Cadastrar Livro">
+                <input type="reset" value="Resetar Cadastro">
+            </div>
+        </form>
+
+        <section>
+            <h1>Tabela de Livros Cadastrados</h1>
+            <table>
+                <tr>
+                    <th>Nome do Livro</th>
+                    <th>Autor do Livro</th>
+                    <th>Preço</th>
+                    <th>Ações</th>
+                </tr>
+                <tr>
+                    <td>Harry Potter</td>
+                    <td>J.K Rowling</td>
+                    <td>28,90</td>
+                    <td>
+                        <a href="#">Apagar</a>
+                        <a href="#">Editar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Vinte Mil Léguas Submarinas</td>
+                    <td>Júlio Verne</td>
+                    <td>50,00</td>
+                    <td>
+                        <a href="#">Apagar</a>
+                        <a href="#">Editar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Volta ao mundo em 80 dias</td>
+                    <td>Júlio Verne</td>
+                    <td>60,00</td>
+                    <td>
+                        <a href="#">Apagar</a>
+                        <a href="#">Editar</a>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Game of Trhones</td>
+                    <td>Júlio Verne</td>
+                    <td>50,00</td>
+                    <td>
+                        <a href="#">Apagar</a>
+                        <a href="#">Editar</a>
+                    </td>
+                </tr>
+
+            </table>
+        </section>
+    </main>
+    <footer>
+        Desenvolvido por: <a href="autor.html">Lucas Delacroix</a>
+    </footer>
+
+
+
+</body>
+
+</html>

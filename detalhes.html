@@ -6,35 +6,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comprar livros detalhes</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body link="green" vlink="green">
+<body>
     
     <header>
         <img src="img/favicon-32x32.png" alt="logo">
-        <h1><a href="index.html">Voltar ao Início</a></h1>
         <h1>Harry Potter e a pedra filosofal</h1>
-        <h2>J.K Rowling</h2>
-        <img src="img/capa_livro_1.jpg" height="300" width="200" alt="Harry Poter">
     </header>
+    <h2>Escrito por: J.K Rowling</h2>
+    
+    <nav>
+        <ul>
+            <li class="menusecundario">
+                <a class="drop" href="index.html">Início</a>
+                <ul class="dropcontent">
+                    <li><a href="#livros_destaque">Livros em Destaque</a></li>
+                    <li><a href="#livros_fantasia">Livros de Fantasia</a></li>
+                    <li><a href="#livros_ficcientifica">Livros de Ficção Científica</a></li>
+                    <li><a href="#livros_maisvendidos">Livros Mais Vendidos</a></li>
+                </ul>
+            </li>
+            <li class="menusecundario">
+                <a href="admin/administracaologin.html">Administração</a>
+                <ul class="dropcontent">
+                    <li><a href="admin/usuarioscadastrados.html">Usuario</a></li>
+                    <li><a href="admin/livroscadastrados.html">Livros</a></li>
+                </ul>
+            </li>
+            <li>
+                <a href="autor.html">Sobre o autor</a>
+            </li>
+        </ul>
+    </nav>
+    
+    <img src="img/capa_livro_1.jpg" height="300" width="200" alt="Harry Poter">
+    
     <main>
-        <H3>Por apenas: R$ 28,90</H3>
-        <p>
-            <a href="#"><button>COMPRAR</button></a>
-        </p>
-        <P>
-            <a href="#"><input type="button" value="COMPRAR COMO PRESENTE"></a>
-        </P>
-        
+        <H2>Por apenas: R$ 28,90</H2>
+        <a href="#">COMPRAR</a>
+        <a href="#">COMPRAR COMO PRESENTE</a>
+     
         <article>
-            
             <h1>Sobre o livro:</h1>
-            <p>
-               <ul>
-                <li>Editora: Rocco</li>
-                <li>Número de Páginas: 264</li>
-                <li>Idioma: Português</li>
+               <ul class="detalheslivro">
+                    <li>Editora: Rocco</li>
+                    <li>Número de Páginas: 264</li>
+                    <li>Idioma: Português</li>
                </ul>
-            </p>
             <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tempus arcu. Sed vel volutpat metus, id consequat ipsum. Ut pharetra tristique tristique. Integer mauris ipsum, aliquet ut mattis nec, blandit quis justo. 
                 Quisque molestie posuere justo id tempor. Pellentesque et tellus id lacus finibus rutrum eu non orci. Praesent ac orci ante. Aenean pellentesque egestas nibh, nec faucibus erat 
@@ -49,7 +68,7 @@
         </article>
     </main>
     <footer>
-        Desenvolvido por: <a href="autor.html">Lucas Delacroix</a>
+        <a href="autor.html">Desenvolvido por: Lucas Delacroix</a>
     </footer>
 </body>
 </html>

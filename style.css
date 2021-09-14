@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital@0;1&family=Khula:wght@800&family=Rubik&family=Signika:wght@700&display=swap');
+
+/*font-family: 'Averia Serif Libre', cursive; (SUBTITUTLOS)
+font-family: 'Khula', sans-serif; (TITULO DOS LIVROS)
+font-family: 'Rubik', sans-serif; (parágrafo normal)
+font-family: 'Signika', sans-serif; (TITULO DA LOJA)*/
+
+/*#A86411
+#FFAF4D
+#F59D31
+#0071A8
+#31B5F5*/
+
+header {
+  font-family:'Signika', sans-serif;
+  font-size: 30px;
+  background-color:#FFAF4D;
+  padding: 4px;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  font-family: 'Averia Serif Libre', cursive;
+  text-align: center;
+  font-size: 40px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color:#0071A8;
+  overflow: hidden;
+}
+
+li {
+  float: left;
+}
+
+li a, .drop {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Rubik', sans-serif ;
+}
+
+li a:hover, .menusecundario:hover .drop {
+  background-color: #F59D31;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+li.menusecundario {
+  display: inline-block;
+}
+
+.dropcontent {
+  display: none;
+  position: absolute;
+  background-color: #0071A8;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropcontent ul{
+  color: #A86411;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropcontent a:hover {
+  background-color: #A86411;
+  transition-duration: 0.3s;
+  cursor: pointer;
+}
+
+.menusecundario:hover .dropcontent {
+  display: block;
+}
+
+.livro {
+  float: left;
+  width: 24%;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width:600px) {
+  .collum {
+    width: 100%;
+    padding: 0;
+  }
+}
+
+.titulosecao {
+  font-family:'Averia Serif Libre', cursive; 
+}
+
+main h1 {
+  font-family: 'Khula', sans-serif;
+}
+
+p {
+  font-family: 'Rubik', sans-serif;
+}
+
+main a {
+  text-decoration: none;
+  background-color: #0071A8;
+  color: white;
+  padding: 15px 25px;
+  text-align: center;
+  display: inline-block;
+  font-family: 'Rubik', sans-serif;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+
+main a:hover {
+  background-color: #F59D31;
+  color: black;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+footer {
+  background-color:#FFAF4D ;
+}
+
+footer a {
+  text-decoration: none;
+  color:black;
+  display: block;
+  text-align: center;
+  padding: 15px 15px;
+}
+
+img {
+  object-fit: fill;
+}
+
+label {
+  font-family: 'Rubik', sans-serif;
+}
+
+input[type=text], input[type=email], input[type=password], input[type=date], select {
+  width: 80%;
+  padding: 8px 10px;
+  margin: 8px;
+  box-sizing: border-box;
+  transition-duration: 0.5s;
+  outline: none;
+}
+
+input[type=text]:focus {
+  border: 3px solid #333;
+}
+

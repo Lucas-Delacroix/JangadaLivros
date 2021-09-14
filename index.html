@@ -8,32 +8,34 @@
     <meta name="description" content="Site de venda de livros digitais e físicos.">
     <title>Jangada Livros</title>
     <link rel="shortcut icon" href="img/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <img src="img/favicon-32x32.png" alt="logo" width="32" height="32">
-        <h1>Loja de Livros</h1>
-        <img src="img/amazon-kindle-dx.jpg" alt="banner" height="282" width="450">
-        <h2>Compre e baixe livros digitais ou físicos pelo melhor preço.</h2>
+        <img id="logo" src="img/favicon-32x32.png" alt="logo" width="32" height="32">
+        <h1 id="nomeloja">Jangada Livros</h1>
     </header>
+    
+    <h2 class="sub">
+        Compre e baixe livros digitais ou físicos pelo melhor preço.
+    </h2>
+    
     <nav>
         <ul>
-            <li>
-                <a href="index.html">Início</a>
-                <ul>
+            <li class="menusecundario">
+                <a class="drop" href="index.html">Início</a>
+                <ul class="dropcontent">
                     <li><a href="#livros_destaque">Livros em Destaque</a></li>
                     <li><a href="#livros_fantasia">Livros de Fantasia</a></li>
+                    <li><a href="#livros_ficcientifica">Livros de Ficção Científica</a></li>
+                    <li><a href="#livros_maisvendidos">Livros Mais Vendidos</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="menusecundario">
                 <a href="admin/administracaologin.html">Administração</a>
-                <ul>
-                    <li>
-                        <a href="admin/usuarioscadastrados.html">Usuario</a>
-                    </li>
-                    <li>
-                        <a href="admin/livroscadastrados.html">Livros</a>
-                    </li>
+                <ul class="dropcontent">
+                    <li><a href="admin/usuarioscadastrados.html">Usuario</a></li>
+                    <li><a href="admin/livroscadastrados.html">Livros</a></li>
                 </ul>
             </li>
             <li>
@@ -43,10 +45,10 @@
     </nav>
     
     <main>
-        <section id="livros_destaque"> 
+        <section class="row" id="livros_destaque"> 
 
-            <h1>Livros em Destaque</h1>
-            <article>
+            <h1 class="titulosecao">Livros em Destaque</h1>
+            <article class="livro">
                 <h1>Harry Potter</h1>
                 <img src="img/capa_livro_1.jpg" height="300" width="200" alt="Harry Poter">
                 <p>
@@ -54,7 +56,7 @@
                 </p>
                 <a href="detalhes.html">Ver Detalhes</a>
             </article>
-            <article>
+            <article class="livro">
                 <h1>Vinte Mil Léguas Submarinas</h1>
                 <img src="img/capa_livro_2.jpg" height="300" width="200" alt="Vinte Mil Léguas Submarinas">
                 <p>
@@ -62,7 +64,7 @@
                 </p>
                 <a href="detalhes.html">Ver Detalhes</a>
             </article>
-            <article>
+            <article class="livro">
                 <h1>Volta ao Mundo em 80 Dias</h1>
                 <img src="img/capa_livro_3.jpg" height="300" width="200" alt="Volta ao Mundo em 80 dias">
                 <p>
@@ -70,7 +72,7 @@
                 </p>
                 <a href="detalhes.html">Ver Detalhes</a>
             </article>
-            <article>
+            <article class="livro">
                 <h1>Neucromancer</h1>
                 <img src="img/capa_livro_ncr.jpg" height="300" width="200" alt="Neucromancer">
                 <p>
@@ -78,10 +80,10 @@
                 </p>
                 <a href="detalhes.html">Ver Detalhes</a>
             </article>
-        </section>
-        <section id="livros_fantasia">
-            <h1>Livros de Fantasia </h1>
-            <article>
+        </section class="row">
+        <section class="row" id="livros_fantasia">
+            <h1 class="titulosecao">Livros de Fantasia </h1>
+            <article class="livro">
                 <h1>O Hobbit</h1>
                 <img src="img/capa_livro_5.jpg" height="300" width="200" alt="O Hobbit">
                 <p>
@@ -89,7 +91,7 @@
                 </p>
                 <a href="detalhes.html">Ver Detalhes</a>
             </article>
-            <article>
+            <article class="livro">
                 <h1>Drácula</h1>
                 <img src="img/capa_livro_6.jpg" height="300" width="200" alt="Drácula">
                 <p>
@@ -97,7 +99,7 @@
                 </p>
                 <a href="detalhes.html">Ver Detalhes</a>
             </article>
-            <article>
+            <article class="livro">
                 <h1>DUNA</h1>
                 <img src="img/capa_livro_7.jpg" height="300" width="200" alt="DUNA">
                 <p>
@@ -105,7 +107,7 @@
                 </p>
                 <a href="detalhes.html">Ver Detalhes</a>
             </article>
-            <article>
+            <article class="livro">
                 <h1>O Senhor dos Anéis</h1>
                 <img src="img/capa_livro_8.jpg" height="300" width="200" alt="O Senhor dos Anéis">
                 <p>
@@ -113,10 +115,10 @@
                 </p>
                 <a href="detalhes.html">Ver Detalhes</a>
             </article>
-        </section>
-        <section id="livros_ficcientifica">
-            <h1>Livros de Ficção Científica </h1>
-            <article>
+        </section class="row">
+        <section class="row" id="livros_ficcientifica">
+            <h1 class="titulosecao">Livros de Ficção Científica </h1>
+            <article class="livro">
                 <h1>Guerra do Velho: 1</h1>
                 <img src="img/capa_livro_10.jpg" height="300" width="200" alt="Guerra do Velho: 1">
                 <p>
@@ -124,7 +126,7 @@
                 </p>
                 <a href="detalhes.html">Ver Detalhes</a>
             </article>
-            <article>
+            <article class="livro">
                 <h1>O Senhor da guerra (Vol.13 Crônicas Saxônicas)</h1>
                 <img src="img/capa_livro_11.jpg" height="300" width="200" alt="O Senhor da guerra">
                 <p>
@@ -132,7 +134,7 @@
                 </p>
                 <a href="detalhes.html">Ver Detalhes</a>
             </article>
-            <article>
+            <article class="livro">
                 <h1>O Guia do Mochileiro das Galáxias</h1>
                 <img src="img/capa_livro_14.jpg" height="300" width="200" alt="O Guia do Mochileiro das Galáxias">
                 <p>
@@ -140,7 +142,7 @@
                 </p>
                 <a href="detalhes.html">Ver Detalhes</a>
             </article>
-            <article>
+            <article class="livro">
                 <h1>Segunda Fundação</h1>
                 <img src="img/capa_livro_13.jpg" height="300" width="200" alt="Segunda Fundação">
                 <p>
@@ -148,10 +150,10 @@
                 </p>
                 <a href="detalhes.html">Ver Detalhes</a>
             </article>
-        </section>
-        <section id="livros_maisvendidos">
-            <h1>Livros Mais Vendidos</h1>
-            <article>
+        </section class="row">
+        <section class="row" id="livros_maisvendidos">
+            <h1 class="titulosecao">Livros Mais Vendidos</h1>
+            <article class="livro">
                 <h1>Maus</h1>
                 <img src="img/capa_livro_15.jpg" height="300" width="200" alt="Maus">
                 <p>
@@ -159,7 +161,7 @@
                 </p>
                 <a href="detalhes.html">Ver Detalhes</a>
             </article>
-            <article>
+            <article class="livro">
                 <h1>O nome do vento (A crônica do Matador do Rei - Livro 1)</h1>
                 <img src="img/capa_livro_16.jpg" height="300" width="200" alt="O nome do vento">
                 <p>
@@ -167,7 +169,7 @@
                 </p>
                 <a href="detalhes.html">Ver Detalhes</a>
             </article>
-            <article>
+            <article class="livro">
                 <h1>Sapiens: Uma breve história da humanidade</h1>
                 <img src="img/capa_livro_17.jpg" height="300" width="200" alt="Sapien uma breve história da humanidade">
                 <p>
@@ -175,7 +177,7 @@
                 </p>
                 <a href="detalhes.html">Ver Detalhes</a>
             </article>
-            <article>
+            <article class="livro">
                 <h1>1984</h1>
                 <img src="img/capa_livro_18.jpg" height="300" width="200" alt="Segunda Fundação">
                 <p>
@@ -183,11 +185,11 @@
                 </p>
                 <a href="detalhes.html">Ver Detalhes</a>
             </article>
-        </section>
+        </section class="row">
     </main>
     <br>
     <footer>
-        Desenvolvido por: <a href="autor.html">Lucas Delacroix</a>
+        <a href="autor.html">Desenvolvido por: Lucas Delacroix</a>
     </footer>
 </body>
 </html>

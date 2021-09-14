@@ -6,35 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Usuários Cadastrados</title>
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="..\style.css">
 </head>
 <body>
     <header>
         <img src="../img/favicon-32x32.png" alt="logo">
         <h1>Usuários Cadastrados</h1>
-        <h4>Página com formulário de cadastro e uma tabela com a lista de usuários cadastrados.</h4>
     </header>
+    <h2 class="sub">
+        Página com formulário de cadastro e uma tabela com a lista de usuários cadastrados.
+    </h2>
+    
     <nav>
         <ul>
-            <li>
-                <a href="../index.html">Início</a>
-                <ul>
+            <li class="menusecundario">
+                <a class="drop" href="../index.html">Início</a>
+                <ul class="dropcontent">
                     <li><a href="../index.html#livros_destaque">Livros em Destaque</a></li>
                     <li><a href="../index.html#livros_fantasia">Livros de Fantasia</a></li>
+                    <li><a href="../index.html#livros_ficcientifica">Livros de Ficção Científica</a></li>
+                    <li><a href="../index.html#livros_maisvendidos">Livros Mais Vendidos</a></li>
                 </ul>
             </li>
-            <li>
+            <li class="menusecundario">
                 <a href="administracaologin.html">Administração</a>
-                <ul>
-                    <li>
-                        <a href="usuarioscadastrados.html">Usuario</a>
-                    </li>
-                    <li>
-                        <a href="livroscadastrados.html">Livros</a>
-                    </li>
+                <ul class="dropcontent">
+                    <li><a href="usuarioscadastrados.html">Usuario</a></li>
+                    <li><a href="livroscadastrados.html">Livros</a></li>
                 </ul>
             </li>
             <li>
-                <a href="autor.html">Sobre o autor</a>
+                <a href="../autor.html">Sobre o autor</a>
             </li>
         </ul>
     </nav>
@@ -107,7 +109,6 @@
                 <input type="text" name="cidade" id="cidade">
             </div>
             <div>
-                <form>
                     Sexo: <br>
                     <input type="radio" id="masculino" name="sexo" value="masculino">
                     <label for="masculino">Masculino</label><br>
@@ -115,7 +116,6 @@
                     <label for="feminino">Feminino</label><br>
                     <input type="radio" id="indefinido" name="sexo" value="indefinido">
                     <label for="indefinido">Prefiro não dizer.</label>
-                </form>
             </div>
             <div>
                 <label for="novidades">Quero ser notificado sobre as novidades da loja.</label>
@@ -168,8 +168,9 @@
         </section>
 
     </main>
+
     <footer>
-        Desenvolvido por: <a href="../autor.html">Lucas Delacroix</a>
+        <a href="../autor.html">Desenvolvido por: Lucas Delacroix</a>
     </footer>
     
 </body>

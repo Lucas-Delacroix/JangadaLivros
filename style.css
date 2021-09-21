@@ -92,6 +92,15 @@ li.menusecundario {
   align-items: center;
 }
 
+section:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+section {
+  displayt
+}
 
 
 main h1 {
@@ -108,7 +117,7 @@ p {
 }
 
 
-main a {
+main a, input[type=submit] {
   text-decoration: none;
   background-color: #0071A8;
   color: white;
@@ -120,27 +129,10 @@ main a {
   cursor: pointer;
 }
 
-main a:hover {
+main a:hover, input[type=submit]:hover {
   background-color: #F59D31;
   color: black;
   box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
-}
-
-footer {
-  background-color:#FFAF4D ;
-}
-
-footer a {
-  text-decoration: none;
-  color:black;
-  display: block;
-  text-align: center;
-  padding: 15px 15px;
-}
-
-img {
-  object-fit: fill;
-  display: inline-block;
 }
 
 label {
@@ -150,9 +142,8 @@ label {
 
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=number], select {
   width: 100%;
-  max-width: 1200px;
-  padding: 10px 10px;
-  margin: 9px;
+  padding: 15px;
+  margin: 5px 0 22px 0;
   box-sizing: border-box;
   transition-duration: 0.5s;
   outline: none;
@@ -171,10 +162,6 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-input[type=radio] {
-
-}
-
 input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=date]:focus, input[type=number]:focus, select:focus {
   border: 2px solid #333;
   background-color:#b6e2f8;
@@ -188,4 +175,32 @@ form {
 
 .tituloform {
   text-align: center;
+}
+
+.acaouser {
+  padding: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  background-color: #0071A8;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+footer {
+  background-color:#FFAF4D ;
+}
+
+footer a {
+  text-decoration: none;
+  color:black;
+  display: block;
+  text-align: center;
+  padding: 15px 15px;
 }

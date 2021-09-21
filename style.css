@@ -12,7 +12,7 @@ font-family: 'Signika', sans-serif; (TITULO DA LOJA)*/
 #31B5F5*/
 
 header {
-  font-family:'Signika', sans-serif;
+  font-family: 'Signika', sans-serif;
   font-size: 30px;
   background-color:#FFAF4D;
   padding: 4px;
@@ -92,30 +92,21 @@ li.menusecundario {
   align-items: center;
 }
 
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
 
-@media screen and (max-width:600px) {
-  .collum {
-    width: 100%;
-    padding: 0;
-  }
-}
-
-.titulosecao {
-  font-family:'Averia Serif Libre', cursive; 
-}
 
 main h1 {
   font-family: 'Khula', sans-serif;
 }
 
+.titulosecao {
+  font:'Averia Serif Libre', cursive; 
+  text-align: center;
+}
+
 p {
   font-family: 'Rubik', sans-serif;
 }
+
 
 main a {
   text-decoration: none;
@@ -149,22 +140,52 @@ footer a {
 
 img {
   object-fit: fill;
+  display: inline-block;
 }
 
 label {
   font-family: 'Rubik', sans-serif;
+  display: inline-block;
 }
 
-input[type=text], input[type=email], input[type=password], input[type=date], select {
-  width: 80%;
-  padding: 8px 10px;
-  margin: 8px;
+input[type=text], input[type=email], input[type=password], input[type=date], input[type=number], select {
+  width: 100%;
+  max-width: 1200px;
+  padding: 10px 10px;
+  margin: 9px;
   box-sizing: border-box;
   transition-duration: 0.5s;
   outline: none;
+  justify-content: center;
+  display: inline-block;
+  align-items: center;
 }
 
-input[type=text]:focus {
-  border: 3px solid #333;
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
 }
 
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+input[type=radio] {
+
+}
+
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=date]:focus, input[type=number]:focus, select:focus {
+  border: 2px solid #333;
+  background-color:#b6e2f8;
+}
+
+form {
+  color: #0071A8;
+  font-family: 'Khula', sans-serif;
+  padding: 25px;
+}
+
+.tituloform {
+  text-align: center;
+}

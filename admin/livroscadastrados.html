@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="pr-br">
-
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,7 +8,6 @@
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="..\style.css">
 </head>
-
 <body>
     <header>
         <img src="../img/favicon-32x32.png" alt="">
@@ -43,19 +41,15 @@
         </ul>
     </nav>
     <main>
+        <h1 class="titutoform">Cadastrar Livros</h1>
         <form action="" method="post">
-            <h1>Formulário de Cadastro de Livros</h1>
             <div>
                 <label for="nome_livro">Nome do Livro:</label>
-                <input type="text" name="nome_livro" id="nome_livro" minlength="2">
+                <input type="text" name="nome_livro" id="nome_livro">
             </div>
             <div>
                 <label for="autor_livro">Autor do Livro:</label>
                 <input type="text" name="autor_livro" id="autor_livro">
-            </div>
-            <div>
-                <label for="capa_livro">Capa do Livro:</label>
-                <input type="file" name="capa_livro" id="capa_livro" accept="image/png, image/jpeg">
             </div>
             <div>
                 <label for="preco_livro">Preço mínimo do livro R$:</label>
@@ -63,7 +57,7 @@
             </div>
             <div>
                 <label for="editora_livro">Editora:</label>
-                <input type="text" name="eitora_livro" id="editora_livro">
+                <input type="text" name="editora_livro" id="editora_livro">
             </div>
             <div>
                 <label for="numeropaginas_livro">Número de páginas:</label>
@@ -78,11 +72,14 @@
                 <input type="text" name="sinopse" id="sinopse">
             </div>
             <div>
+                <label for="capa_livro" id="inputdofile">Capa do Livro:</label>
+                <input type="file" name="capa_livro" id="capa_livro" accept="image/png, image/jpeg">
+            </div>
+            <div>
                 <input type="submit" value="Cadastrar Livro">
                 <input type="reset" value="Resetar Cadastro">
             </div>
         </form>
-
         <section>
             <h1>Tabela de Livros Cadastrados</h1>
             <table>
@@ -238,6 +235,7 @@
                 </tr>
             </table>
         </section>
+    
     </main>
 
     <footer>

@@ -108,29 +108,31 @@
                 <label for="cidade">Cidade onde mora:</label>
                 <input type="text" name="cidade" id="cidade">
             </div>
-            <div>
-                    Sexo:
+            <div class="radio">
+                    <span class="int">Sexo:</span> 
                     <input type="radio" id="masculino" name="sexo" value="masculino">
-                    <label for="masculino">Masculino</label><br>
+                    <label for="masculino" class="labelradio">Masculino</label>
+                    
                     <input type="radio" id="feminino" name="sexo" value="feminino">
-                    <label for="feminino">Feminino</label><br>
+                    <label for="feminino" class=labelradio>Feminino</label>
+                    
                     <input type="radio" id="indefinido" name="sexo" value="indefinido">
-                    <label for="indefinido">Prefiro não dizer.</label>
+                    <label for="indefinido" class="labelradio">Prefiro não dizer.</label>
             </div>
-            <div>
-                <label for="novidades">Quero ser notificado sobre as novidades da loja.</label>
+            <div class="radio">
+                <label for="novidades" class="int">Quero ser notificado sobre as novidades da loja.</label>
                 <input type="checkbox" name="novidades" id="novidades">
             </div>
             <div>
-                <input type="submit" value="Cadastrar">
+                <button type="submit"> Registrar </button> 
             </div>
         </form>
-        <section>
-            <h1>Tabela com lista de usuários cadastrados</h1>
-            <table>
+            <h1 class="tituloform">Tabela com lista de usuários cadastrados</h1>
+        <table>
                 <tr>
                     <th>Nome do Usuário</th>
                     <th>Email</th>
+                    <th>Ações</th>
                 </tr>
                 <tr>
                     <td>Lucas</td>
@@ -164,8 +166,7 @@
                         <a href="#">Editar</a>
                     </td>
                 </tr>
-            </table>
-        </section>
+        </table>
 
     </main>
 

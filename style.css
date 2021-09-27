@@ -27,6 +27,12 @@ h2 {
   font-size: 40px;
 }
 
+nav {
+  top: 0;
+  position: sticky;
+  z-index: 10;
+}
+
 ul {
   list-style-type: none;
   padding: 0;
@@ -92,14 +98,16 @@ li.menusecundario {
   align-items: center;
 }
 
+main section {
+  display: block;
+  margin: auto;
+}
+
 section:after {
+  padding: 10px;
   content: "";
   display: table;
   clear: both;
-}
-
-section {
-  displayt
 }
 
 
@@ -110,6 +118,11 @@ main h1 {
 .titulosecao {
   font:'Averia Serif Libre', cursive; 
   text-align: center;
+}
+
+article {
+  padding: 10px;
+  position: relative;
 }
 
 p {
@@ -203,4 +216,19 @@ footer a {
   display: block;
   text-align: center;
   padding: 15px 15px;
+}
+
+.detalheslivro {
+  float: none;
+  padding: 8px;
+  background-color: #F59D31;
+  width: 15%;
+  align-items: center;
+  height: 50%;
+  border-radius: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  justify-content: center;
+  display:block;
+  margin: auto;
+  position: relative;
 }

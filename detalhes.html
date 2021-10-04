@@ -7,6 +7,7 @@
     <title>Comprar livros detalhes</title>
     <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     
@@ -21,10 +22,10 @@
             <li class="menusecundario">
                 <a class="drop" href="index.html">Início</a>
                 <ul class="dropcontent">
-                    <li><a href="#livros_destaque">Livros em Destaque</a></li>
-                    <li><a href="#livros_fantasia">Livros de Fantasia</a></li>
-                    <li><a href="#livros_ficcientifica">Livros de Ficção Científica</a></li>
-                    <li><a href="#livros_maisvendidos">Livros Mais Vendidos</a></li>
+                    <li><a href="index.html#livros_destaque">Livros em Destaque</a></li>
+                    <li><a href="index.html#livros_fantasia">Livros de Fantasia</a></li>
+                    <li><a href="index.html#livros_ficcientifica">Livros de Ficção Científica</a></li>
+                    <li><a href="index.html#livros_maisvendidos">Livros Mais Vendidos</a></li>
                 </ul>
             </li>
             <li class="menusecundario">
@@ -40,20 +41,28 @@
         </ul>
     </nav>
     
-    <img src="img/capa_livro_1.jpg" height="300" width="200" alt="Harry Poter">
-    
     <main>
-        <H2 class="preço">Por apenas: R$ 28,90</H2>
-        <a href="#" class="comprar">COMPRAR</a>
-        <a href="#" class="comprar">COMPRAR COMO PRESENTE</a>
+        <div class="capa">
+            <img src="img/capa_livro_1.jpg" height="300" width="200" alt="Harry Poter">
+            <ul class="detalheslivro">
+                <li>Editora: Rocco</li>
+                <li>Número de Páginas: 264</li>
+                <li>Idioma: Português</li>
+           </ul>
+        </div>
+        
+        <div class="preco">
+            <H2 >Por apenas: R$ 28,90</H2>
+        </div>
+        
+        <div class="preco">
+            <a href="#" class="comprar">COMPRAR</a>
+            <a href="#" class="comprar" id="presentecomprar"><i class="fa fa-gift" style="font-size:24px"></i> COMPRAR COMO PRESENTE </a>
+        </div>
      
-        <article>
-            <h1>Sobre o livro:</h1>
-               <ul class="detalheslivro">
-                    <li>Editora: Rocco</li>
-                    <li>Número de Páginas: 264</li>
-                    <li>Idioma: Português</li>
-               </ul>
+        <details>
+            <summary> <i class="fa fa-plus" style="font-size:24px"> Sobre o livro</i></summary>
+               
             <p class="sinopse">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis tempus arcu. Sed vel volutpat metus, id consequat ipsum. Ut pharetra tristique tristique. Integer mauris ipsum, aliquet ut mattis nec, blandit quis justo. 
                 Quisque molestie posuere justo id tempor. Pellentesque et tellus id lacus finibus rutrum eu non orci. Praesent ac orci ante. Aenean pellentesque egestas nibh, nec faucibus erat 
@@ -65,7 +74,7 @@
                 nulla et dictum dignissim, orci quam pharetra eros, vel sodales libero enim vitae mauris. Vestibulum luctus faucibus mauris vel fringilla. Praesent venenatis justo scelerisque justo bibendum ornare. Morbi feugiat, diam ut auctor dignissim, leo dolor blandit odio, 
                 a interdum ante est et eros. Maecenas feugiat accumsan risus sit amet tincidunt.
             </p>
-        </article>
+        </details>
     </main>
     <footer>
         <a href="autor.html">Desenvolvido por: Lucas Delacroix</a>

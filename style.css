@@ -21,6 +21,11 @@ header {
   justify-content: center;
 }
 
+body {
+  margin: 0px;
+  background-color: #fcfcfc;
+}
+
 h2 {
   font-family: 'Averia Serif Libre', cursive;
   text-align: center;
@@ -41,7 +46,7 @@ ul {
   overflow: hidden;
 }
 
-li {
+nav li {
   float: left;
 }
 
@@ -108,12 +113,45 @@ main section {
   text-align: center;
 }
 
+@media screen and (max-width: 600px) {
+  main section {
+    justify-content: space-around;
+  }
+}
+
+@media print {
+  nav {
+    display: none;
+  }
+  li a {
+   display: none;
+ }
+ .livro {
+   width: none;
+ }
+}
+
+.titulosecao #primeirotitulo {
+  margin-top: 0em;
+}
 .titulosecao {
   display:flex;
   position: center;
   text-align: center;
   width: 100%;
   margin-top: 2em;
+  background-color: #FFAF4D;
+  padding-top: 1em;
+  height:2em;
+  justify-content:space-around;
+}
+
+#primeirotitulo {
+  display:flex;
+  position: center;
+  text-align: center;
+  width: 100%;
+  margin-top: 0em;
   background-color: #FFAF4D;
   padding-top: 1em;
   height:2em;
@@ -145,16 +183,14 @@ main a:hover, input[type=submit]:hover {
 
 label {
   font-family: 'Rubik', sans-serif;
-  display: inline-block;
+  text-align: left;
 }
 
 input[type=text], input[type=email], input[type=password], input[type=date], input[type=number], select {
-  display: flex;
+  width: 100%;
   flex-wrap: wrap;
-  justify-content: space-around;
-  width: 50%;
   padding: 15px;
-  margin: 5px 0 30px 0;
+  margin: 5px 0 20px 0;
   box-sizing: border-box;
   transition-duration: 0.5s;
   outline: none;
@@ -164,7 +200,14 @@ input[type=radio], input[type=checkbox] {
   cursor: pointer;
   height: 20px;
   width: 20px;
+  margin-top: 2px;
+  text-align: left;
+}
 
+.checkbox {
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 9px;
 }
 
 .radio {
@@ -186,8 +229,8 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
-input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=date]:focus, input[type=number]:focus, select:focus {
-  border: 2px solid #333;
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=date]:focus, input[type=number]:focus, select:focus, input[type=checkbox]:hover {
+  border: 2px solid #0071A8;
   background-color:#b6e2f8;
 }
 
@@ -195,27 +238,54 @@ button[type=submit], button[type=button] {
   display: flex;
   cursor: pointer;
   border: none;
-  width: 50%;
   padding: 1em;
   margin-top: 20px;
   background-color: #0071A8;
   color: white;
   font-family: 'Rubik', sans-serif;
   transition-duration: 0.5s;
-  justify-content: space-around;
 }
 
-form {
+button[type=submit]:hover, button[type=button]:hover {
+  background-color: #F59D31;
+  color: black;
+
+} 
+
+.paiform {
   display: block;
-  align-items: center;
+  text-align: center;
+}
+
+
+form {
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
   color: #0071A8;
   font-family: 'Khula', sans-serif;
   padding: 25px;
 }
 
-.tituloform {
-  text-align: center;
+form a {
+  display: block;
 }
+
+.linknormal {
+  padding: 0;
+  text-decoration: underline;
+  color: blue;
+  background-color: transparent;
+  text-align: left;
+  transition-duration: 99999999s;
+}
+
+label {
+  font-family: 'Rubik', sans-serif;
+  text-align: left;
+}
+
+
 
 table {
   display: flex;
@@ -256,8 +326,69 @@ table a {
   justify-content: center;
 }
 
+.capa {
+  display: flex;
+  place-items: center;
+  justify-content: center;
+  margin: 30px;
+}
+
+.preco {
+  text-align: center;
+}
+
+.botoescompra {
+  display: flex;
+  justify-content: space-around;
+}
+
+.quadro {
+  justify-content: space-around;
+  display: flex;
+}
+
+.detalheslivro {
+  display: table;
+  text-align: left;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 3px;
+  border: 4px solid #FFAF4D;
+  background-color: white;
+}
+
+#presentecomprar {
+  padding:10px 9px 15px 20px;
+}
+
+
+details > summary {
+  display: flex;
+  justify-content: space-around;
+  padding: 15px;
+  width: 200px;
+  background-color: #0071A8;
+  color: white;
+  border: none;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  cursor: pointer;
+  transition-duration: 0.5s;
+  margin: 2em;
+}
+
+details > summary:hover {
+  background-color:#FFAF4D ;
+  color:black;
+}
+
+details > p {
+  margin-bottom: 40px;
+  background-color:#b6e2f8 ;
+  padding: 20px;
+}
 
 footer {
+  margin-top: 50px;
   background-color:#FFAF4D ;
 }
 
@@ -269,17 +400,9 @@ footer a {
   padding: 15px 15px;
 }
 
-.detalheslivro {
-  float: none;
-  padding: 8px;
-  background-color: #F59D31;
-  width: 15%;
-  align-items: center;
-  height: 50%;
-  border-radius: 10px;
-  font-family: 'Courier New', Courier, monospace;
-  justify-content: center;
-  display:block;
-  margin: auto;
-  position: relative;
+main {
+  display: block;
 }
+
+
+

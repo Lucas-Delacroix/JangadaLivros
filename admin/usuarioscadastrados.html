@@ -40,7 +40,8 @@
             </li>
         </ul>
     </nav>
-    <main>
+    
+    <main class="paiform">
         <h1 class="tituloform">Cadastrar de Usuários</h1>
         <form action="" method="post">
             <div>
@@ -109,26 +110,30 @@
                 <input type="text" name="cidade" id="cidade">
             </div>
             <div class="radio">
-                    <span class="int">Sexo:</span> 
-                    <input type="radio" id="masculino" name="sexo" value="masculino">
-                    <label for="masculino" class="labelradio">Masculino</label>
+                <span class="int">Sexo:</span> 
+                <input type="radio" id="masculino" name="sexo" value="masculino">
+                <label for="masculino" class="labelradio">Masculino</label>
                     
-                    <input type="radio" id="feminino" name="sexo" value="feminino">
-                    <label for="feminino" class=labelradio>Feminino</label>
+                <input type="radio" id="feminino" name="sexo" value="feminino">
+                <label for="feminino" class=labelradio>Feminino</label>
                     
-                    <input type="radio" id="indefinido" name="sexo" value="indefinido">
-                    <label for="indefinido" class="labelradio">Prefiro não dizer.</label>
+                <input type="radio" id="indefinido" name="sexo" value="indefinido">
+                <label for="indefinido" class="labelradio">Prefiro não dizer.</label>
             </div>
             <div class="radio">
                 <label for="novidades" class="int">Quero ser notificado sobre as novidades da loja.</label>
                 <input type="checkbox" name="novidades" id="novidades">
             </div>
             <div>
-                <button type="submit"> Registrar </button> 
+                <a href="#">Registrar</a>
+            </div>
+            <div>
+                <a href="#" class="linknormal">Já possui um cadastro? Clique aqui.</a>
             </div>
         </form>
-            <h1 class="tituloform">Tabela com lista de usuários cadastrados</h1>
+
         <table>
+            <h1 class="tituloform">Tabela com lista de usuários cadastrados</h1>
                 <tr>
                     <th>Nome do Usuário</th>
                     <th>Email</th>

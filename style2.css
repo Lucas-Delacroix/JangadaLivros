@@ -58,6 +58,7 @@ ul {
   margin: 0;
   background-color: var(--corsecundaria);
   overflow: hidden;
+  position: fixed;
 }
 
 nav li {

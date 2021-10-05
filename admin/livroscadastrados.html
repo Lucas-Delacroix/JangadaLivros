@@ -40,7 +40,8 @@
             </li>
         </ul>
     </nav>
-    <main>
+    
+    <main class="paiform">
         <h1 class="tituloform">Cadastrar Livros</h1>
         <form action="" method="post">
             <div>
@@ -75,164 +76,165 @@
                 <label for="capa_livro" id="inputdofile">Capa do Livro:</label>
                 <input type="file" name="capa_livro" id="capa_livro" accept="image/png, image/jpeg">
             </div>
-            <div class="acaouser">
-                <button type="button" class="cancelar">Cancelar Cadastro</button>
-                <button type="submit" class="cadastrar">Cadastrar Livro</button>
+            <div>
+                <a href="#">Cadastrar Livro</a>
+                <a href="#">Cancelar Cadastro</a>
             </div>
         </form>
+
+        <table>
             <h1 class="tituloform">Tabela de Livros Cadastrados</h1>
-            <table>
-                <tr>
-                    <th>Nome do Livro</th>
-                    <th>Autor do Livro</th>
-                    <th>Preço</th>
-                    <th>Ações</th>
-                </tr>
-                <tr>
-                    <td>Harry Potter</td>
-                    <td>J.K Rowling</td>
-                    <td>28,90</td>
-                    <td>
-                        <a href="#">Apagar</a>
-                        <a href="#">Editar</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Vinte Mil Léguas Submarinas</td>
-                    <td>Júlio Verne</td>
-                    <td>50,00</td>
-                    <td>
-                        <a href="#">Apagar</a>
-                        <a href="#">Editar</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Volta ao mundo em 80 dias</td>
-                    <td>Júlio Verne</td>
-                    <td>60,00</td>
-                    <td>
-                        <a href="#">Apagar</a>
-                        <a href="#">Editar</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Neucromancer</td>
-                    <td>William Gibson</td>
-                    <td>100,00</td>
-                    <td>
-                        <a href="#">Apagar</a>
-                        <a href="#">Editar</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>O Hobbit</td>
-                    <td>J.R.R TOLKIEN</td>
-                    <td>130,00</td>
-                    <td>
-                        <a href="#">Apagar</a>
-                        <a href="#">Editar</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Drácula</td>
-                    <td>Bram Stoker</td>
-                    <td>89,00</td>
-                    <td>
-                        <a href="#">Apagar</a>
-                        <a href="#">Editar</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>DUNA</td>
-                    <td>Frank Herbet</td>
-                    <td>80,00</td>
-                    <td>
-                        <a href="#">Apagar</a>
-                        <a href="#">Editar</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>O Senhor dos Anéis</td>
-                    <td>J.R.R Tolkien</td>
-                    <td>80,00</td>
-                    <td>
-                        <a href="#">Apagar</a>
-                        <a href="#">Editar</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Guerra do Velho: 1</td>
-                    <td>Jhon Scalzi</td>
-                    <td>150,00</td>
-                    <td>
-                        <a href="#">Apagar</a>
-                        <a href="#">Editar</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>O Senhor da guerra (Vol.13 Crônicas Saxônicas)</td>
-                    <td>Bernard Cornwell</td>
-                    <td>50,00</td>
-                    <td>
-                        <a href="#">Apagar</a>
-                        <a href="#">Editar</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>O Gui do Mochileiro das Galáxias</td>
-                    <td>Bernard Cornwell</td>
-                    <td>28,90</td>
-                    <td>
-                        <a href="#">Apagar</a>
-                        <a href="#">Editar</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Segunda Fundação</td>
-                    <td>Marcelo Barbão</td>
-                    <td>50,00</td>
-                    <td>
-                        <a href="#">Apagar</a>
-                        <a href="#">Editar</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Maus</td>
-                    <td>Art Spiegelman</td>
-                    <td>100,00</td>
-                    <td>
-                        <a href="#">Apagar</a>
-                        <a href="#">Editar</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>O nome do vento (A crônica do Matador do Rei - Livro 1)</td>
-                    <td>Patrick Rothfuss</td>
-                    <td>25,00</td>
-                    <td>
-                        <a href="#">Apagar</a>
-                        <a href="#">Editar</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>Sapien: Uma breve história da humanidade</td>
-                    <td>Yuval Noah Harari</td>
-                    <td>80,00</td>
-                    <td>
-                        <a href="#">Apagar</a>
-                        <a href="#">Editar</a>
-                    </td>
-                </tr>
-                <tr>
-                    <td>1984</td>
-                    <td>George Orwell</td>
-                    <td>80,00</td>
-                    <td>
-                        <a href="#">Apagar</a>
-                        <a href="#">Editar</a>
-                    </td>
-                </tr>
-            </table>
+            <tr>
+                <th>Nome do Livro</th>
+                <th>Autor do Livro</th>
+                <th>Preço</th>
+                <th>Ações</th>
+            </tr>
+            <tr>
+                <td>Harry Potter</td>
+                <td>J.K Rowling</td>
+                <td>28,90</td>
+                <td>
+                    <a href="#">Apagar</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Vinte Mil Léguas Submarinas</td>
+                <td>Júlio Verne</td>
+                <td>50,00</td>
+                <td>
+                    <a href="#">Apagar</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Volta ao mundo em 80 dias</td>
+                <td>Júlio Verne</td>
+                <td>60,00</td>
+                <td>
+                    <a href="#">Apagar</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Neucromancer</td>
+                <td>William Gibson</td>
+                <td>100,00</td>
+                <td>
+                    <a href="#">Apagar</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>O Hobbit</td>
+                <td>J.R.R TOLKIEN</td>
+                <td>130,00</td>
+                <td>
+                    <a href="#">Apagar</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Drácula</td>
+                <td>Bram Stoker</td>
+                <td>89,00</td>
+                <td>
+                    <a href="#">Apagar</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>DUNA</td>
+                <td>Frank Herbet</td>
+                <td>80,00</td>
+                <td>
+                    <a href="#">Apagar</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>O Senhor dos Anéis</td>
+                <td>J.R.R Tolkien</td>
+                <td>80,00</td>
+                <td>
+                    <a href="#">Apagar</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Guerra do Velho: 1</td>
+                <td>Jhon Scalzi</td>
+                <td>150,00</td>
+                <td>
+                    <a href="#">Apagar</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>O Senhor da guerra (Vol.13 Crônicas Saxônicas)</td>
+                <td>Bernard Cornwell</td>
+                <td>50,00</td>
+                <td>
+                    <a href="#">Apagar</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>O Gui do Mochileiro das Galáxias</td>
+                <td>Bernard Cornwell</td>
+                <td>28,90</td>
+                <td>
+                    <a href="#">Apagar</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Segunda Fundação</td>
+                <td>Marcelo Barbão</td>
+                <td>50,00</td>
+                <td>
+                    <a href="#">Apagar</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Maus</td>
+                <td>Art Spiegelman</td>
+                <td>100,00</td>
+                <td>
+                    <a href="#">Apagar</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>O nome do vento (A crônica do Matador do Rei - Livro 1)</td>
+                <td>Patrick Rothfuss</td>
+                <td>25,00</td>
+                <td>
+                    <a href="#">Apagar</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Sapien: Uma breve história da humanidade</td>
+                <td>Yuval Noah Harari</td>
+                <td>80,00</td>
+                <td>
+                    <a href="#">Apagar</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+            <tr>
+                <td>1984</td>
+                <td>George Orwell</td>
+                <td>80,00</td>
+                <td>
+                    <a href="#">Apagar</a>
+                    <a href="#">Editar</a>
+                </td>
+            </tr>
+        </table>
     
     </main>
 

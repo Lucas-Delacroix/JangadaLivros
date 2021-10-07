@@ -19,6 +19,12 @@ font-family: 'Signika', sans-serif; (TITULO DA LOJA)*/
   --corsecundarialeve: #b6e2f8;
 }
 
+#drkmd {
+  padding: 9px 16px;
+  text-align: center;
+  float: right;
+}
+
 header {
   font-family: 'Signika', sans-serif; ;
   font-size: 30px;
@@ -51,6 +57,37 @@ nav {
   position: sticky;
   z-index: 10;
 }
+
+.btmenu, .btfechar, #menu{
+  display: none;
+  background-color: var(--corsecundaria);
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  border: solid 3px var(--corprimaria);
+}
+
+@media screen and (max-width: 600px) {
+  nav{
+    display: none;
+  }
+  
+  input:checked ~ nav {
+    display: block;
+  }
+  input:checked ~ .btmenu {
+    display: none;
+  }
+  input:checked ~ .btfechar {
+    display: block;
+  }
+  .btmenu {
+    display: block;
+  }
+
+}
+
+
 
 ul {
   list-style-type: none;

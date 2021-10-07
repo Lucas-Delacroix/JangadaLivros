@@ -1,26 +1,32 @@
-@import url('https://fonts.googleapis.com/css2?family=Averia+Serif+Libre:ital@0;1&family=Khula:wght@800&family=Rubik&family=Signika:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Playfair+Display:ital,wght@1,500&family=Yaldevi:wght@500&display=swap');
 
-/*font-family: 'Averia Serif Libre', cursive; (SUBTITUTLOS)
-font-family: 'Khula', sans-serif; (TITULO DOS LIVROS)
-font-family: 'Rubik', sans-serif; (parágrafo normal)
-font-family: 'Signika', sans-serif; (TITULO DA LOJA)*/
+/*font-family: 'Akronim', cursive;
+font-family: 'Playfair Display', serif;
+font-family: 'Yaldevi', sans-serif;
+*/
 
-/*#A86411
-#FFAF4D
-#F59D31
-#0071A8
-#31B5F5*/
+/*#1751A3
+#579DFF
+#3985F0
+#A36E07
+#F0B23A*/
+
+
 
 :root {
-  --corprimaria: #FFAF4D;
-  --corsecundaria: #0071A8;
-  --corterciaria: #F59D31;
-  --comterciaria2: #A86411;
-  --corsecundarialeve: #b6e2f8;
+  --corprimaria: #25ADF8;
+  --corsecundaria: #543cda;
+  --corterciaria: #F0B133;
+  --comterciaria2: #9956f1;
+  --corsecundarialeve: #8372df;
+  --titulosgrandes: 'Yaldevi', sans-serif;
+  --subtitulos: 'Akronim', cursive;
+  --paragrafos: 'Playfair Display', serif;
+
 }
 
 header {
-  font-family: 'Signika', sans-serif; ;
+  font-family: var(--titulosgrandes) ;
   font-size: 30px;
   background-color: var(--corprimaria);
   padding: 4px;
@@ -28,6 +34,7 @@ header {
   text-align: center;
   align-items: center;
   justify-content: center;
+  color: white;
 }
 
 body {
@@ -36,19 +43,46 @@ body {
 }
 
 h2 {
-  font-family: 'Averia Serif Libre', cursive; ;
+  font-family: var(--subtitulos);
   text-align: center;
   font-size: 40px;
 }
 
 h1 {
-  font-family: 'Khula', sans-serif;
+  font-family: var(--paragrafos)
 }
 
 nav {
-  font-family: 'Rubik', sans-serif;
-  z-index: 10;
-  position: fixed
+  background-color: var(--corsecundaria);
+}
+
+.btmenu, .btfechar, #menu{
+  display: none;
+  background-color: var(--corsecundaria);
+  width: 30px;
+  border-radius: 50%;
+  text-align: center;
+  border: solid 3px var(--corprimaria);
+}
+
+@media screen and (max-width: 600px) {
+  nav{
+    display: none;
+  }
+  
+  input:checked ~ nav {
+    display: block;
+  }
+  input:checked ~ .btmenu {
+    display: none;
+  }
+  input:checked ~ .btfechar {
+    display: block;
+  }
+  .btmenu {
+    display: block;
+  }
+
 }
 
 ul {
@@ -56,9 +90,6 @@ ul {
   padding: 0;
   margin: 0;
   background-color: var(--corsecundaria);
-  overflow: auto;
-  position: fixed;
-  height: 100%;
 
 }
 
@@ -118,7 +149,7 @@ li.menusecundario {
 }
 
 main section {
-  font-family: 'Averia Serif Libre', cursive; 
+  font-family: var(--subtitulos);
   display: flex;
   flex-wrap: wrap;
   margin: auto;
@@ -145,7 +176,7 @@ main section {
 }
 
 .titulosecao {
-  font-family:'Averia Serif Libre', cursive; 
+  font-family:var(--subtitulos); 
   width: 100%;
   padding: 1em;
   background-color: var(--corprimaria);
@@ -159,7 +190,7 @@ main section {
 }
 
 p {
-  font-family: 'Rubik', sans-serif;;
+  font-family: var(--paragrafos)
 }
 
 
@@ -341,7 +372,7 @@ table a {
 
 
 details > summary {
-  font-family: 'Rubik', sans-serif;;
+  font-family: var(--paragrafos);
   display: flex;
   justify-content: space-around;
   padding: 15px;
@@ -356,7 +387,7 @@ details > summary {
 }
 
 details > summary:hover {
-  background-color:var(--corprimaria) ;
+  background-color:var(--corterciaria) ;
   color:black;
 }
 
@@ -364,24 +395,28 @@ details > p {
   margin-bottom: 40px;
   background-color:var(--corsecundarialeve) ;
   padding: 20px;
-  font-family: 'Rubik', sans-serif; ;
+  font-family: var(--paragrafos);
+  color: black;
 }
 
 footer {
-  font-family:'Rubik', sans-serif; 
+  font-family:var(--paragrafos); 
   font-style: oblique;
   margin-top: 60px;
   background-color:var(--corprimaria) ;
   transition-duration: 0.6s;
+  color:black;
 }
 
-footer:hover {
+footer a:hover {
+  transition-duration: 0.6s;
   background-color:var(--corterciaria) ;
+  color: black;
 }
 
 footer a {
   text-decoration: none;
-  color:black;
+  color:white;
   display: block;
   text-align: center;
   padding: 2em;
@@ -390,7 +425,7 @@ footer a {
 .autor {
   display: block;
   text-align: center;
-  font-family:'Rubik', sans-serif;  
+  font-family:var(--paragrafos) ;
   font-size: 20px;
   padding: 2em;
 }
@@ -403,7 +438,7 @@ footer a {
 
 main {
   display: block;
-  font-family: 'Rubik', sans-serif;;
+  font-family: var(--paragrafos);
 }
 
 

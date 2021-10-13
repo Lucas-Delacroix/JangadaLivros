@@ -60,7 +60,7 @@ nav {
   display: none;
   background-color: var(--corsecundaria);
   width: 30px;
-  border-radius: 50%;
+  border-radius: 20%;
   text-align: center;
   border: solid 3px var(--corprimaria);
 }
